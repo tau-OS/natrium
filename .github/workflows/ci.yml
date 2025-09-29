@@ -43,6 +43,7 @@ jobs:
                   path: build/out/**
 
             - name: Prepare release package
+              if: github.ref_type == 'tag'
               run: |
                   pushd build/out
                   zip -r ../../natrium-fonts.zip .
