@@ -45,6 +45,8 @@ jobs:
             - name: Prepare release package
               if: github.ref_type == 'tag'
               run: |
+                  cp LICENSE.md build/out/
+                  cp README.md build/out/
                   pushd build/out
                   zip -r ../../natrium-fonts.zip .
                   popd
