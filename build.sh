@@ -29,8 +29,6 @@ common_args=(
     -v
     -f "ss02,ss04,ss05,ss08,tnum"
     -R 'Geist/Natrium'
-    -n
-    -r
     -i
 )
 
