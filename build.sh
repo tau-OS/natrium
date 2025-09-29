@@ -70,4 +70,8 @@ function process_font_set() {
 
 prepare_font
 
-process_font_set "$GEIST_FONT_DIR/fonts/Geist"
+# process_font_set "$GEIST_FONT_DIR/fonts/Geist"
+
+for font in "${fonts[@]}"; do
+    process_font_set "$GEIST_FONT_DIR/fonts/$font"
+done
