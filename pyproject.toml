@@ -1,0 +1,10 @@
+[project]
+name = "natrium"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fonttools[lxml,ufo,unicode,woff]>=4.60.0",
+    "opentype-feature-freezer>=1.32.2",
+]
